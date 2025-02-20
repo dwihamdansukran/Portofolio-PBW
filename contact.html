@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Hamdan Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Dwi Hamdan Sukran</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000"><a href="index.html">Home</a></div>
+                <div class="link contact-btn active" data-aos="fade-up" data-aos-duration="1000"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>    
+        </div>
+    </nav>
+
+    <!-- Halaman Contact -->
+    <section class="contact-container">
+        <div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Get in <span>Touch</span></h2>
+            <p>Silakan isi formulir di bawah ini atau hubungi saya melalui media sosial!</p>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Nama Lengkap</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <textarea required></textarea>
+                    <label>Pesan Anda</label>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Pesan</button>
+            </form>
+            <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                <a href="https://github.com/dwihamdansukran" ><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/hamdansukran_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dwi-hamdan-sukran-972851327/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="+6285210469871"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
